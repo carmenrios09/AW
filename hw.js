@@ -68,12 +68,5 @@ for (let i = 0; i < guests.length; i++) {
   teaGuest.smallDessert = `${smallDessert}`;
   teaPartyTable[guest.firstName] = teaGuest;
 }
+console.log(teaPartyTable);
 
-for (let guest in teaPartyTable) {
-  console.log(`First Name: ${teaPartyTable[guest].firstName}`);
-  console.log(`Last Name: ${teaPartyTable[guest].lastName}`);
-  console.log(`Species: ${teaPartyTable[guest].species}`);
-  console.log(`Tea Cup: ${teaPartyTable[guest].teaCup}`);
-  console.log(`Tea Plate: ${teaPartyTable[guest].teaPlate}`);
-  console.log(`Small Dessert: ${teaPartyTable[guest].smallDessert}`);
-}
